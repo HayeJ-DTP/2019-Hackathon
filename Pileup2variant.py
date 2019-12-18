@@ -11,7 +11,7 @@
 
 #### G E N E R A L   D E S C R I P T I O N ####:
 
-
+#A tool to read, identify, and remove population variants from NGS read alignments from a chosen input file. The tool allows for the input of sequences from any .fasta file, enabling the user to easily, and quickly, download and analyse sequence data from sites such as NCBI.
 
 """
 """
@@ -23,12 +23,15 @@ print("Hello world!")
 #test line to ensure the program has launched properly, also assures the user of this
 
 bases = {'A': ['A'], 'C': ['C'], 'B': ['C', 'G', 'T'], 'D': ['A', 'G', 'T'], 'G': ['G'], 'H': ['A','C', 'T'], 'K': ['G', 'T'], 'M': ['A', 'C'], 'N': ['G', 'A', 'T', 'C'], 'S': ['C', 'G'], 'R': ['A', 'G'], 'T': ['T'], 'W': ['A', 'T'], 'V': ['A', 'C', 'G'], 'Y': ['C', 'T']}
+#dictionary of "acceptable" bases, will alert the user if the input file contains erroneous data that is not from this list
 
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 min_percent = float(sys.argv[3])
 Total_Depth = sys.argv[4]
 lines = open(input_file).readlines()
+#using sys.argv to recieve and process the different sets of information from the file
+#Usage: Pileup2variant.py INPUT.pileup OUTPUTname %variantCutoff SAMdepth.csv
 
 variant_lines = []
 depth_lines = []
