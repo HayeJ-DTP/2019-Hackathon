@@ -1,5 +1,0 @@
-samtools mpileup -d 0 -Q 0 -AEf  REFERENCE.FASTA ALIGNEMNT>BAM > OUTPUT.pileup
-
-samtools depth -d 0 -a ALIGNMENT.bam > DEPTH.csv
- 
-Pileup2variant.py OUTPUT.pileup NAMEforOUTfile %variant DEPTH.csv
