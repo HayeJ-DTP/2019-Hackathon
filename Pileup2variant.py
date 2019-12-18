@@ -1,9 +1,27 @@
 #!/usr/bin/env python3
 #Usage: Pileup2variant.py [INPUT.pileup] [NameOfOuput] [Variant % cut off] [SAMdepth.csv]
 
+# Name: Pileup2variant.py
+# Created by: Holly Everest - holly.everest@hertford.ox.ac.uk; Jack Hayes - jack.hayes@st-hughs.ox.ac.uk
+# Special thanks to Dr Dorey-Robinson
+# Date: 16 Dec 2019
+
+"""
+---------------------------------------------------------------------------------------------------------
+
+#### G E N E R A L   D E S C R I P T I O N ####:
+
+
+
+"""
+"""
+---------------------------------------------------------------------------------------------------------
+"""
 import sys
 
 print("Hello world!")
+#test line to ensure the program has launched properly, also assures the user of this
+
 bases = {'A': ['A'], 'C': ['C'], 'B': ['C', 'G', 'T'], 'D': ['A', 'G', 'T'], 'G': ['G'], 'H': ['A','C', 'T'], 'K': ['G', 'T'], 'M': ['A', 'C'], 'N': ['G', 'A', 'T', 'C'], 'S': ['C', 'G'], 'R': ['A', 'G'], 'T': ['T'], 'W': ['A', 'T'], 'V': ['A', 'C', 'G'], 'Y': ['C', 'T']}
 
 input_file = sys.argv[1]
