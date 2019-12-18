@@ -127,8 +127,7 @@ for line in lines [0:]:
                                 T_baseR = f[4].count("t")
                                 T_float = [float(T_baseF)] + [float(T_baseR)]
                                 T_sum = sum(T_float)
-                                T_total = (str(T_sum))
-                              
+                                T_total = (str(T_sum))                            
               
                 Ins_count = f[4].count("+")
                 Ins = (str(Ins_count))
@@ -142,7 +141,6 @@ for line in lines [0:]:
                 coverage = locus + "\t" + Depth
                 Coverage_file.append(coverage)
                
-
                 Depth_float = float(Depth)
                 Ref_matches = float(total_matches)
                 pc_not_matching_ref = 100 - (100*Ref_matches/Depth_float)
@@ -151,8 +149,7 @@ for line in lines [0:]:
                                 variant_depth.append(coverage)
                                 #print(coverage)
                                 #print(Depth_float)
-                                #print(new_line)
-                             
+                                #print(new_line)                          
 #print(variant_lines)
 
 new_header = "Subject\tlocus\tref_base\tdepth\tA\tG\tC\tT\tInsertions\tDeletions"
@@ -171,8 +168,7 @@ with open(output_file + "_variant_coverage.txt", "w") as fh:
 
 with open("Variant_Depth.txt", "w") as fh:
                 fh.write("\n".join(variant_depth))
-
-               
+              
 # Zero depth positions using the samtools depth function
 Zerolines = open(Total_Depth).readlines()
 ZeroDepth_cov = []
