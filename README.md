@@ -1,10 +1,9 @@
 # 2019-Hackathon: Developing a tool to identify and remove population variants out of NGS read alignments
 GitHub repository for the 2019 Bioinformatics assessment
 
-This project aimed to develop a tool, through python, to read, identify, and remove population variants from NGS read alignments from a chosen input file. The tool allows for the input of sequences from any .fasta file, enabling the user to easily, and quickly, download and analyse sequence data from sites such as NCBI 
+This project aimed to develop a tool, through python, to read, identify, and remove population variants from NGS read alignments from a chosen input file. The tool allows for the input of sequences from any .fasta file, enabling the user to easily, and quickly, download and analyse sequence data from sites such as NCBI.
 
-
-Usage: Pileup2variant.py INPUT.pileup OUTPUTname %variantCutoff SAMdepth.csv
+The first step is to download the example .fastq files (in this case for flu), using wget:
 
 	wget  ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/004/ERR3506784/ERR3506784_1.fastq.gz
 
@@ -41,4 +40,6 @@ else
 	
        Pileup2variant.py "$refname"_REFBAM.pileup "$refname" "$PerformVA" SAMdepth_"$refname".csv
 
+
+Usage: Pileup2variant.py INPUT.pileup OUTPUTname %variantCutoff SAMdepth.csv
  
