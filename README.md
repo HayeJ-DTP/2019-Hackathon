@@ -6,9 +6,9 @@ This project aimed to develop a tool, through python, to read, identify, and rem
 
 Usage: Pileup2variant.py INPUT.pileup OUTPUTname %variantCutoff SAMdepth.csv
 
-wget  ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/004/ERR3506784/ERR3506784_1.fastq.gz
+	wget  ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/004/ERR3506784/ERR3506784_1.fastq.gz
 
-wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/004/ERR3506784/ERR3506784_2.fastq.gz
+	wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/004/ERR3506784/ERR3506784_2.fastq.gz
 
 
 It was run using a bash script:
